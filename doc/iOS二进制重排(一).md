@@ -1,0 +1,3 @@
+
+# 二进制重排（一）
+对于app启动来说分为两个阶段，第一哥阶段是在main函数之前，操作系统加载app可执行文件到内存，进行一系列的加载和链接工作，最后dyld调起main函数，这个过程叫pre-main；第二个阶段就是main函数开始到appdelegate的-didFinishLauching方法到展示首页的内容为止。
