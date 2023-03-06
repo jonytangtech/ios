@@ -1,12 +1,7 @@
-```js
-
-```
-
-` `
 
 # 二进制重排（一）
 
-对于app启动来说分为两个阶段，第一个阶段是在main函数之前，操作系统加载app可执行文件到内存，进行一系列的加载和链接工作，最后dyld调起main函数，这个过程叫pre-main；第二个阶段就是main函数开始到appdelegate的-didFinishLauching方法到展示首页的内容为止。
+对于`app`启动来说分为两个阶段，第一个阶段是在`main`函数之前，操作系统加载app可执行文件到内存，进行一系列的加载和链接工作，最后`dyld`调起`main`函数，这个过程叫`pre-main`；第二个阶段就是`main`函数开始到`appdelegate`的`-didFinishLauching`方法到展示首页的内容为止。
 
 ## 一、启动时间检测
 在xcode13 & iOS 15之前，xcode已经为我们提供了便捷的方法，在项目里点击Edit Scheme：
@@ -19,13 +14,12 @@
 设置完环境变量之后，运行打印：</br>
 <img width="639" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/223014198-b3b15767-2300-4f3d-9e82-4c4ea56dcf43.png">
 
- 可以看到main函数运行之前，pre-main阶段运行所消耗的时间，这是用一个老项目跑在真机上，差不多是120毫秒的消耗。
+ 可以看到main函数运行之前，`pre-main`阶段运行所消耗的时间，这是用一个老项目跑在真机上，差不多是120毫秒的消耗。
  可以看到time里面又分为四个阶段：
 - dylib loading time
 - rabase/binding time
 - Objc setup time
 - initializer time
-这是行内代码`onCreate(Bundle savedInstanceState)`的例子。
 
 <img width="644" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/223016373-514b7064-6dc5-4da9-a17f-99ec9a35c585.png">
 
