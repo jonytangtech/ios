@@ -1,9 +1,8 @@
 ```js
-在ObjC setup time这个阶段之后，还有一个initializer time，在这个阶段主要是各种初始化操作，比如初始化ObjC类的load函数，执行
-C++的构造函数，load函数加载会在main执行之前，所以尽量不要在load里面做一些耗时操作，它都会影响app的启动时间。
+
 ```
 
-`在ObjC setup time这个阶段之后，还有一个initializer time，在这个阶段主要是各种初始化操作，比如初始化ObjC类的load函数，执行C++的构造函数，load函数加载会在main执行之前，所以尽量不要在load里面做一些耗时操作，它都会影响app的启动时间。`
+` `
 
 
 # 二进制重排（一）
