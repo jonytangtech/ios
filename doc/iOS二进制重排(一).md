@@ -1,11 +1,12 @@
 
-
 # 二进制重排（一）
 
-对于`app`启动来说分为两个阶段，第一个阶段是在`main`函数之前，操作系统加载app可执行文件到内存，进行一系列的加载和链接工作，最后`dyld`调起`main`函数，这个过程叫`pre-main`；第二个阶段就是`main`函数开始到`appdelegate`的`-didFinishLauching`方法到展示首页的内容为止。
+对于`app`启动来说分为两个阶段：
+- 第一个阶段是在`main`函数之前，操作系统加载app可执行文件到内存，进行一系列的加载和链接工作，最后`dyld`调起`main`函数，这个过程叫`pre-main`；
+- 第二个阶段就是`main`函数开始到`appdelegate`的`-didFinishLauching`方法到展示首页的内容为止。
 
 ## 一、启动时间检测
-在Xcode 13 & iOS 15之前，Xcode已经为我们提供了便捷的方法，在项目里点击`Edit Scheme`：
+在 Xcode 13 & iOS 15 之前，Xcode 已经为我们提供了便捷的方法，在项目里点击`Edit Scheme`：
 
 <img width="415" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/223014067-36f2d7b3-d7a5-4200-9222-a187dfebf974.png">
 
@@ -17,7 +18,8 @@
 
 <img width="639" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/223014198-b3b15767-2300-4f3d-9e82-4c4ea56dcf43.png">
 
-可以看到`main`函数运行之前，`pre-main`阶段运行所消耗的时间，这是用一个老项目跑在真机上，差不多是`120`毫秒的消耗。而`time`里面又分为`4`个阶段：
+可以看到`main`函数运行之前，`pre-main`阶段运行所消耗的时间，这是用一个老项目跑在真机上，差不多是`120`毫秒的消耗。
+### time 里面又分为4个阶段：
 
 - dylib loading time
 - rabase/binding time
@@ -30,8 +32,7 @@
 - 对于`dylib loading time` 加载时间的优化：可以减少动态库的数量，这里的动态库是指自己制作的动态库，而非系统的动态库 ，像苹果的`libSystem.B.dylib`或者`Foundation`等动态库已经在共享缓存里，系统已经做了最大优化，我们无需处理，而对于我们自己制作的动态库，苹果建议不要超过`6`个;
 - 对于`Objc setup time` 加载时间的优化： 它做的事情是注册`Objc`所有的类，相当于在可执行文件`Mac-o`中读取所有的类，把他们放到一张表里面去，这些类就能被我们所使用，包括`runtime`动态添加一个类，它都需要`register`函数做注册操作。
 
->
-因此，我们所有使用到的类在系统加载时候都有一个注册的过程，所以，不管我们写的类最终有没有使用到，它都会有注册操作，这最终会影响到
+>因此，我们所有使用到的类在系统加载时候都有一个注册的过程，所以，不管我们写的类最终有没有使用到，它都会有注册操作，这最终会影响到
 程序启动的时间。
 >
 
@@ -44,7 +45,7 @@ gem install fui
 ```swift
 fui help
 ```
-如何使用：
+### 如何使用？
 拿一个测试项目举例， 在项目点击到终端：
 
 
