@@ -26,6 +26,8 @@
 - Objc setup time
 - initializer time
 
+>可以看到有slowet intializers是显示上面显示上面4个阶段里耗时所占比例较大的库文件等
+>
 <img width="644" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/223016373-514b7064-6dc5-4da9-a17f-99ec9a35c585.png">
 
 ## 优化方法：
@@ -71,11 +73,10 @@ fui help
 
 这对打包`app`体积优化有帮助，尤其是老项目
 
-```js
-在ObjC setup time这个阶段之后，还有一个initializer time，在这个阶段主要是各种初始化操作，比如初始化ObjC类的load函数，执行
+>在ObjC setup time这个阶段之后，还有一个initializer time，在这个阶段主要是各种初始化操作，比如初始化ObjC类的load函数，执行
 C++的构造函数，load函数加载会在main执行之前，所以尽量不要在load里面做一些耗时操作，它都会影响app的启动时间。
+>
 
-```
 ### 符号绑定
 再回过头来说一下`rebase/binding time binding`就是符号绑定，这里拿一个小的可执行文件举例：
 
