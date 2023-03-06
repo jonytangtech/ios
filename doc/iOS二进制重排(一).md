@@ -4,11 +4,12 @@
 对于`app`启动来说分为两个阶段，第一个阶段是在`main`函数之前，操作系统加载app可执行文件到内存，进行一系列的加载和链接工作，最后`dyld`调起`main`函数，这个过程叫`pre-main`；第二个阶段就是`main`函数开始到`appdelegate`的`-didFinishLauching`方法到展示首页的内容为止。
 
 ## 一、启动时间检测
-在xcode13 & iOS 15之前，xcode已经为我们提供了便捷的方法，在项目里点击Edit Scheme：
+在`Xcode13` & `iOS15`之前，`Xcode`已经为我们提供了便捷的方法，在项目里点击`Edit Scheme`：
 
 <img width="415" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/223014067-36f2d7b3-d7a5-4200-9222-a187dfebf974.png">
 
-选择Run，环境变量填入：，Value值填：1：
+选择`Run`，环境变量填入：`Value`值填：`1`：
+
 <img width="762" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/223014109-a9081b71-858b-484b-96dd-f08de5d13aba.png">
 
 设置完环境变量之后，运行打印：</br>
