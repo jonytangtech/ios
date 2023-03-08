@@ -7,10 +7,15 @@
 `PCs`指的是`CPU`的寄存器，用来存储将要执行的下一条指令的地址，`Tracing PCs`就是跟踪`CPU`将要执行的代码。
 ### 二、如何使用
 网页下拉有个`Example`
+
 <img width="615" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/223763137-ff634161-e64b-4975-ae18-a0d5c715bbc2.png">
+
 使用之前要在工程添加标记：
+
 <img width="764" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/223763200-8892f026-5e69-422f-99b1-ffe5689e9d53.png">
+
 编译器就会在每一行代码的边缘插入这一段函数：`__sanitizer_cov_trace_pc_guard(&guard_variable)`
+
 <img width="725" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/223763405-38b8b6aa-44e6-4167-936f-1924f36f21e6.png">
 
 项目会报未定义符号的错：
@@ -20,7 +25,6 @@
 这就需要去定义这两个符号，先把这两个函数复制过来：
 
 <img width="669" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/223763486-f0f909bc-d39d-4011-b502-cd3f2a3a1eea.png">
-
 
 先把代码复制进`ViewController`
 
@@ -69,7 +73,6 @@ extern "C" void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
 
 <img width="230" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/223763562-f03dd76e-7746-4a6e-a0b0-82c26b6c87c9.png">
 
-
 这个`__sanitizer_symbolize_pc(PC, "%p %F %L", PcDescr, sizeof(PcDescr));`函数没有什么作用，直接删除即可。
 
 ## 三、代码调试
@@ -77,7 +80,6 @@ extern "C" void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
 `cmd + r`运行，此时终端会打印一些信息：
 
 <img width="504" alt="Pasted Graphic 9" src="https://user-images.githubusercontent.com/126937296/223763607-72680a88-cee1-444e-a89f-aff567d22b5f.png">
-
 
 删除两个函数里面的注释，先注释第二个的内容，然后运行
 
@@ -96,7 +98,6 @@ for (uint32_t *x = start; x < stop; x++)
 `start`和`stop`里面存的是什么，打断点调试：
 
 <img width="514" alt="Pasted Graphic 10" src="https://user-images.githubusercontent.com/126937296/223763645-c2c12c2f-79db-44f0-9c71-baa17a06c813.png">
-
 
 先看`start`:
 
