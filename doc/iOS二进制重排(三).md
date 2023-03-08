@@ -4,7 +4,7 @@
 ### 一、缺页分析
 首先打开自己的app，启动跑到真机上，然后按`cmd + ctrl + i`，`启动Instruments`
 
-![Uploading Pasted Graphic.png…]()
+<img width="790" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/223635445-aecb235c-410b-4f10-8f7b-7c04552c02d2.png">
 
 选择`System Trace` 点击`Choose`，打开后点击箭头指向位置
 
