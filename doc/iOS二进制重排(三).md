@@ -100,7 +100,7 @@ _66666666666666
 
 <img width="700" alt="1__#$!@%!#__Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/223635334-5739575b-c730-4e38-b082-b16055881678.png">
 
-> 还是打开 —> Intermediates.noindex —> app名称.build —> Debug-iphoneos —>  app名称.build  —> app名称-LinkMap-normal-arm64.txt
+> 还是打开 `Intermediates.noindex` —> `app名称.build` —> `Debug-iphoneos` —>  `app名称.build`  —> `app名称-LinkMap-normal-arm64.txt`
 
 ### 总结
 可以看到，现在编译的顺序就是我们`.order`文件里面写的顺序，而且无关输入被忽略，这样就可以根据我们设置方法的启动顺序，那怎样才能知道一个程序启动他需要哪些函数，哪些函数这就需要用到`clang`插桩。
