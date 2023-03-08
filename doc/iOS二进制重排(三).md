@@ -6,32 +6,31 @@
 
 <img width="790" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/223635445-aecb235c-410b-4f10-8f7b-7c04552c02d2.png">
 
-选择`System Trace` 点击`Choose`，打开后点击箭头指向位置
+选择`System Trace` 点击`Choose`，打开后点击箭头指向位置：
 
 <img width="433" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/223634875-08ea75de-2846-430a-90ec-d2d72584065e.png">
 
 
-就会开始分析启动情况
+就会开始分析启动情况：
 
 <img width="900" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/223634928-f9d51be1-cb3b-4935-b50c-a31bd1e9e8ce.png">
 
 
-分析完毕，再次点击箭头位置结束
+分析完毕，再次点击箭头位置结束：
 
 <img width="900" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/223634968-f8792316-5ae5-4761-a490-c3eb058dd884.png">
 
-在搜索框输入`main`
+在搜索框输入`main`：
 
 <img width="443" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/223635003-831697e5-bc65-4a52-a6f0-befb95139b12.png">
 
-`Narrative`选择 `Summary`: `Virtual Memory`
+`Narrative`选择 `Summary`: `Virtual Memory`：
 
 <img width="246" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/223635034-e33778de-feb4-43cd-b142-16aa8ccbcbdc.png">
 
 点击要优化app的`Main Thread`，可以看到`File Backed Page In` 这个就是`page fault` 缺页异常，总共是`2200`个，冷启动总耗时是`441ms`，占总耗时`454ms`非常大的比例
 
 <img width="384" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/223635069-be004f2f-34ba-4521-8f10-66f2a777936b.png">
-
 
 这个地方就可以去优化，去减少`page fault`的次数
 
