@@ -190,7 +190,7 @@ Tmp文件下可以看到一个.order文件
 
 打开文件：
 
-![Pasted Graphic 4.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc24523dc7cf4a8f90dfd4586f7b1ffb~tplv-k3u1fbpfcp-watermark.image?)
+<img width="469" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/224033775-361989a9-ded5-43e7-95bf-65725f2681fd.png">
 
 写入的内容就是我们想要的内容，这样就可以把`.order`文件复制进项目里。
 
