@@ -7,7 +7,7 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
 ```
 添加断点，点击箭头，可以看到绿色框中的函数调用栈：
 
-![Pasted Graphic.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da117b3c5b9142828920fa421551cda6~tplv-k3u1fbpfcp-watermark.image?)
+<img width="411" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/223900179-b6dc4493-2668-4753-9bee-8c7198724b46.png">
 
 >函数调用栈跟之前讲到的`app名称.LinkMap-normal-arm64.txt`文件里面的数据格式一样。
 
@@ -20,7 +20,7 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
 ```
 点击上面的绿色箭头：
 
-![Pasted Graphic 1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1a745e75c83b47458c08037768527054~tplv-k3u1fbpfcp-watermark.image?)
+<img width="524" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/223900215-1e9b9f68-19a4-4542-a677-d9418564ba98.png">
 
 这里就出现了`touchesBegan`，那大概推出下面这个函数是系统每调用一个方法，都会调用这个`__sanitizer_cov_trace_pc_guard`函数：
 
@@ -77,26 +77,29 @@ NSLog(@"%s",__func__);
 ```
 我们在程序启动时候`__sanitizer_cov_trace_pc_guard`拦截到的方法函数：
 
-
-![Pasted Graphic 3.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10b77628acc048b5b306a7711e36324b~tplv-k3u1fbpfcp-watermark.image?)
+<img width="297" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/223900256-3f18f859-1690-4750-a3e2-170d673dbf32.png">
 
 >把这些写入到`.order`文件里面这样二进制重排就搞定了
 
 而`_sanitizer_cov_trace_pc_guard`，这个函数是如何做到这一点的？给`_sanitizer_cov_trace_pc_guard`添加断点，在Xcode的`Debug`选择`Debug WorkFlow`选择显示汇编，选择`main`：
 
-![Pasted Graphic 5.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d1b0666cf1b4ad8828f09784843b537~tplv-k3u1fbpfcp-watermark.image?)
+<img width="283" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/223900290-9c282a4b-21c3-4e75-aabd-262319999062.png">
+
+可以看到在`main`之前，系统插入了`_sanitizer_cov_trace_pc_guard`这个符号
+
+<img width="672" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/223900319-d651f01a-1c29-4c8d-ae66-44e831b92c4e.png">
 
 在`AppDelegate`页面也是插入了这个符号：
 
-![Pasted Graphic 6.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f10bca67f7dd45ff83ebf41b2378f6e8~tplv-k3u1fbpfcp-watermark.image?)
+<img width="922" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/223900794-67f29554-e2ee-491a-bfa3-77b98c34a81a.png">
 
 在`SceneDelegate`同样如此：
 
-![Pasted Graphic 7.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4c39426e962143d8b6bf94f51eda8599~tplv-k3u1fbpfcp-watermark.image?)
+<img width="948" alt="Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/223900811-0068b754-13f2-4afb-a22c-cc0a1fa260b2.png">
 
 也就是说，在编译器`clang`添加下面这个标记后，编译器会给函数方法前面都会调用`_sanitizer_cov_trace_pc_guard`这个函数：
 
-![Pasted Graphic 8.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38fa589830d54d9386403cdf1ebc9c62~tplv-k3u1fbpfcp-watermark.image?)
+<img width="614" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/223900836-b2c12607-5ecd-4b00-8536-a370003a7c50.png">
 
 这样，我们确实在打断点看到启动阶段的所有符号：
 
