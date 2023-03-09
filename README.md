@@ -12,3 +12,9 @@
 - [离屏渲染（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96clang%E6%8F%92%E6%A1%A9(%E4%BA%8C).md)
 - [离屏渲染（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96clang%E6%8F%92%E6%A1%A9(%E4%B8%89).md)
 
+# 内存管理《weak》
+- [内存管理《weak》（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96clang%E6%8F%92%E6%A1%A9(%E4%B8%80).md)
+- [内存管理《weak》（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96clang%E6%8F%92%E6%A1%A9(%E4%BA%8C).md)
+- [内存管理《weak》（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96clang%E6%8F%92%E6%A1%A9(%E4%B8%89).md)
+
+
