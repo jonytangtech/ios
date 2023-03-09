@@ -176,8 +176,59 @@ dli_sname -- -[SceneDelegate scene:willConnectToSession:options:]
 dli_sname -- -[SceneDelegate window]
 dli_sname -- -[ViewController viewDidLoad]
 ```
+得到了启动时候所需要的所有符号和启动顺序，拿到这些符号之后，把它复制粘贴到`.order`文件中，就可以实现之前需要的目标，就是拿到把启动所需要的符号和顺序加载在前面的`page`里面，就实现了二进制重排。在放进`.order`文件之前，需要把重复的符号删掉，并且对于函数或者`block`，需要在前面加个`“_”`，这样整个`clang`插桩就已经完成。
 
-得到了启动时候所需要的所有符号和启动顺序。
+## 四、获取符号方式优化
+
+>但是，上面手动的方法不够灵活，应该让计算机去做这些操作，用代码完成上面的操作。 
+>
+#### 目标：
+1. 去掉重复的符号
+2. 如果是函数就前面加上“_”
+3. 生成一个.order文件
+
+那第一步就是要对下面的符号进行收集，然后存储起来:
+
+```js
+void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
+//    NSLog(@"%s",__func__);
+    if (!*guard) return;
+    void *PC = __builtin_return_address(0);
+    Dl_info info;
+    dladdr(PC, &info);
+    printf("dli_sname -- %s\n",info.dli_sname);
+}
+```
+>这就需要有一个全局的容器来存放，并且这里会涉及到多线程的情况，因为一个app启动不大可能只有一个线程在跑，因为函数、方法和`block`在哪个线程跑，这个获取符号的回调函数也在那个线程运行，所以在符号收集的时候，需要考虑线程安全问题。
+
+所以，这边使用线程安全的原子队列，导入头文件：
+
+```js
+#import <libkern/OSAtomic.h>
+```
+定义一个全局容器结构体:
+
+```js
+typedef struct {
+    void * pc;
+    void *next;
+} SYNode;
+```
+然后在回调函数里面进行操作：
+
+```js
+void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
+    if (!*guard) return;
+    void *PC = __builtin_return_address(0);
+//开辟空间
+    SYNode *node = malloc(sizeof(SYNode));
+//赋值
+    *node = (SYNode){PC,NULL};
+    //结构体存入原子队列
+    OSAtomicEnqueue(&symbolList, node, offsetof(SYNode, next ));
+}
+```
+`offsetof`里面的`next`是下一个存储位置的偏移量，这样我们就把符号都放进了`symbolList`里面，在合适的位置把它取出来就行。
 
 
 
