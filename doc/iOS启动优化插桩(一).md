@@ -5,7 +5,7 @@
 <img width="563" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/223763011-8967fa51-142d-4b84-a22c-dc31d1be5b7b.png">
 
 `PCs`指的是`CPU`的寄存器，用来存储将要执行的下一条指令的地址，`Tracing PCs`就是跟踪`CPU`将要执行的代码。
-### 二、如何使用
+## 二、如何使用
 网页下拉有个`Example`
 
 <img width="615" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/223763137-ff634161-e64b-4975-ae18-a0d5c715bbc2.png">
@@ -191,7 +191,7 @@ TraceDemo[17266:316294] 37
 ```
 符号变成`37`，
 
-### 结论
+## 结论
 这就说明了通过这个方法整个项目里的符号，它都能捕获到。
 
 
