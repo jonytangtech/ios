@@ -1,4 +1,4 @@
-# 启动优化clang插桩（一）
+# iOS启动优化clang插桩（一）
 ## 一、了解Clang
 首先到`Clang`地址：[Clang Documentation](https://clang.llvm.org/docs/SanitizerCoverage.html)
 
