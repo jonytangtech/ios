@@ -101,7 +101,7 @@ NSLog(@"%s",__func__);
 
 <img width="614" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/223900836-b2c12607-5ecd-4b00-8536-a370003a7c50.png">
 
-这样，我们确实在打断点看到启动阶段的所有符号：
+这样，我们确实在打断点看到启动阶段的所有符号。
 
 ## 三、如何把符号都打印出来
 
