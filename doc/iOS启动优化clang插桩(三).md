@@ -37,7 +37,7 @@
 ```
 回到`Build setting`，将原来标记那里添加一个参数`func`：
 
-![Pasted Graphic.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a77e9d1229d34bf59ad269026df43c24~tplv-k3u1fbpfcp-watermark.image?)
+<img width="691" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224032878-c2cfdab8-32e7-4ea2-854e-4b445f014a43.png">
 
 再次运行，点击屏幕打印：
 
@@ -186,31 +186,31 @@ NSLog(@"%@",funcs);
 TraceDemo[31577:752540] /Users/xxxx/Library/Developer/CoreSimulator/Devices/876D0DEB-7AC9-4B67-A877-DB2BC4B5BD10/data/Containers/Data/Application/702BBFFB-D619-4B19-814C-0C9CXXXXX
 Tmp文件下可以看到一个.order文件
 ```
-
-![Pasted Graphic 3.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7de3b968917947628906ffea25cca9ae~tplv-k3u1fbpfcp-watermark.image?)
+<img width="137" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/224033029-199ef4f6-7549-499a-9470-7fdf5a5563d1.png">
 
 打开文件：
 
 ![Pasted Graphic 4.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc24523dc7cf4a8f90dfd4586f7b1ffb~tplv-k3u1fbpfcp-watermark.image?)
+
 写入的内容就是我们想要的内容，这样就可以把`.order`文件复制进项目里。
 
-![Pasted Graphic 2.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b69aefb7939045298fcc3fe83265b64a~tplv-k3u1fbpfcp-watermark.image?)
+<img width="401" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/224033094-d44b4246-3425-4a6d-815f-d405f5d5867a.png">
 
 Order File添加文件位置：
 
-![Pasted Graphic 1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6484940b1fcf4c4c91c723a91e2488e5~tplv-k3u1fbpfcp-watermark.image?)
+<img width="603" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/224033165-58e4132c-ca16-45d6-b179-f1cd6ee84ef5.png">
 
 `Link Map File`打开：
 
-![1__#$!@%!#__Pasted Graphic 3.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/85dcb68b2246406c9e8b4fbfc0844647~tplv-k3u1fbpfcp-watermark.image?)
+<img width="746" alt="1__#$!@%!#__Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/224033217-e1adcf27-7560-4928-88ed-178daa3fbdc2.png">
 
 运行，然后找到这个`LinkMap`文件：
 
-![1__#$!@%!#__Pasted Graphic 4.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4e553462c9f047c99b6995023376283e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="141" alt="1__#$!@%!#__Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/224033312-367346a5-439e-4da1-a9d4-ed57dbd83123.png">
 
 打开和`.order`文件对比：
 
-![Pasted Graphic 5.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5d68361bf5da47339d256021ac1cac1b~tplv-k3u1fbpfcp-watermark.image?)
+<img width="821" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/224033348-eb42bad3-27dc-4ba7-be09-67f19f9b3bb3.png">
 
 发现完全一致。
 
@@ -261,7 +261,7 @@ print("我是swift")
 ```
 发现并没有打印`swift`方法，因为`swift`并不是`clang`编译的，`clang`插桩只能编译`C`、`C++`和`OC`，这里就需要用在`Other Swift Flags`添加两个标记：`-sanitize-coverage=func`、`-sanitize=undefined`。
 
-![1__#$!@%!#__Pasted Graphic.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3fe2aa87f20541dcb503cd00b988ec08~tplv-k3u1fbpfcp-watermark.image?)
+<img width="681" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224033425-c1165631-35fc-4503-8a8b-ee36755bbb91.png">
 
 再次运行：
 
