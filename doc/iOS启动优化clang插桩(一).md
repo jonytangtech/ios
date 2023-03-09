@@ -14,9 +14,12 @@
 
 <img width="764" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/223763200-8892f026-5e69-422f-99b1-ffe5689e9d53.png">
 
-编译器就会在每一行代码的边缘插入这一段函数：`__sanitizer_cov_trace_pc_guard(&guard_variable)`
+>编译器就会在每一行代码的边缘插入这一段函数：`__sanitizer_cov_trace_pc_guard(&guard_variable)`
 
-<img width="725" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/223763405-38b8b6aa-44e6-4167-936f-1924f36f21e6.png">
+打开实例`demo`，在`Build Settings` 搜索 `Other c Flag` 填入 `-fsanitize-coverage=trace-pc-guard`
+
+<img width="715" alt="1__#$!@%!#__Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/223940172-dcf22058-548c-48a0-9083-b220551d8cd3.png">
+
 
 项目会报未定义符号的错：
 
