@@ -128,7 +128,7 @@
 <img width="339" alt="Pasted Graphic 9" src="https://user-images.githubusercontent.com/126937296/224495545-20034a2a-3ded-452d-976a-646f51278fd6.png">
 
 - 如果本身还有子视图，父视图不透明度为`1`，开启允许组不透明就需要混合计算，这样不会触发离屏渲染：
-- 
+
 <img width="249" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224495555-5758a8b7-ce76-415c-9dd2-cc0113772be4.png">
 
 ## 七、.圆角
