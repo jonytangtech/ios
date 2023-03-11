@@ -131,7 +131,7 @@
 
 <img width="249" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224495555-5758a8b7-ce76-415c-9dd2-cc0113772be4.png">
 
-## 七、.圆角
+## 七、圆角
 #### 1. 设置背景颜色和圆角
 
 ```js
