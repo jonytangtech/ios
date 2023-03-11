@@ -1,5 +1,6 @@
 
-![Pasted Graphic.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/827c76365934453bb79387421c55a507~tplv-k3u1fbpfcp-watermark.image?)
+<img width="640" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224495422-d5173d0f-44c9-4d87-ac20-7ae11cab5301.png">
+
 # 有哪些操作到导致离屏渲染？
 ## 一、 添加光栅化
 
@@ -14,7 +15,7 @@
 ```
 可以看到开启光栅化会触发离屏渲染：
 
-![Pasted Graphic 1.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57432907b8864b11b2e0dc56b82accba~tplv-k3u1fbpfcp-watermark.image?)
+<img width="333" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/224495429-24db9fad-70d7-4155-afb3-c61459066d4a.png">
 
 ## 二、添加遮罩
 
@@ -30,12 +31,11 @@
 ```
 会触发离屏渲染：
 
-![Pasted Graphic 2.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3afcb9ea3004780a33b0ef54a8e22ed~tplv-k3u1fbpfcp-watermark.image?)
+<img width="339" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/224495439-44dd88e0-2ecf-4387-9870-65cf149881cd.png">
 
 >因为添加遮罩，创建出来的`layer`会被添加到原本图像的默认`layer`上面，而屏幕上的每一个像素点是通过多层`layer`由`GPU`混合计算出来的，多添加了一层`layer`，就是类似上篇文章讲的，层级变复杂了，这样`GPU`无法把需要呈现的图像一次绘制完毕，他只能用离屏渲染的方式来处理。
 
 ## 三、添加阴影
-
 
 ```js
 //阴影
@@ -49,7 +49,7 @@
 ```
 会触发离屏渲染：
 
-![Pasted Graphic 3.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff0f5f18f6794227aca688b0852b7134~tplv-k3u1fbpfcp-watermark.image?)
+<img width="334" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/224495451-065ace36-ae06-4680-a5bf-499921c9191a.png">
 
 >这个阴影和遮罩`mask`是很像，只不过遮罩是添加到`layer`的上层，而阴影是添加到`layer`的下层，它的层级也比较复杂，所以也会触发离屏渲染。
 
@@ -64,12 +64,12 @@
     self.testImageView.layer.masksToBounds = NO;
     
     //提前指定阴影的路径
-    [self.testImageView.layer setShadowPath:[UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.testImageView.bounds.size.width + 20, self.testImageView.bounds.size.height + 20)].CGPath];
+    [self.testImageView.layer setShadowPath:[UIBezierPath bezierPathWithRect:CGRectMake(0, 0,       self.testImageView.bounds.size.width + 20, self.testImageView.bounds.size.height + 20)].CGPath];
 }
 ```
 没有离屏渲染:
 
-![Pasted Graphic 4.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/365597d42e754a629ab6445c6d6f690e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="326" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/224495476-3adf5b8a-3c42-4135-871a-7c954a4d63c5.png">
 
 >阴影是添加在`layer`的下层，阴影会优先会被渲染，在渲染阴影的时候依赖视图的大小，但视图本身还没有被渲染好，这个时候只能通过离屏渲染进行辅助处理，贝塞尔曲线就是提前指定阴影的路径，这个阴影的渲染就不需要依赖视图本体，这个阴影会被单独地进行渲染，不需要通过离屏渲染辅助合成图像。
 ## 五、抗锯齿
@@ -84,15 +84,15 @@
 ```
 这个要分情况，在图片`Content Mode`是`Aspect Fill`的模式下：
 
-![Pasted Graphic 5.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e6870c72275c44c682b9b363b183b848~tplv-k3u1fbpfcp-watermark.image?)
+<img width="255" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/224495498-718c6c3e-8258-40ea-9274-8175be2b8b93.png">
 
 会触发离屏渲染：
 
-![Pasted Graphic 6.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1c305f4f8f34b8b8a04ca138573cd3e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="250" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/224495506-4ea0cc18-a55e-4e00-970b-519b4113c56b.png">
 
 如果改为`Scale To Fill`或者`Aspect Fit`等不需要进行抗锯齿计算的模式就不会触发离屏渲染：
 
-![Pasted Graphic 7.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e69e1293a98b483fb666460c97a0ab53~tplv-k3u1fbpfcp-watermark.image?)
+<img width="241" alt="Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/224495515-306bd6c6-1dcf-4d67-a22a-e1ea6ea46bf4.png">
 
 >因此，`icon`的图片最好跟控件的比例或者尺寸是一样的，最大可能地减少离屏渲染的可能性。
 
@@ -108,7 +108,8 @@
 ```
 #### 1. 如果是自己本身不透明，并不会触发离屏渲染：
 
-![Pasted Graphic 8.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c0d722a622b3475da5c8d4995f303996~tplv-k3u1fbpfcp-watermark.image?)
+<img width="250" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/224495525-1667237b-4861-458b-bf81-a110b47b4326.png">
+
 #### 2. 一种还有子视图的情况开启`allowsGroupOpacity`：
 
 ```js
@@ -124,10 +125,11 @@
 ```
 - 如果本身还有子视图，父视图不透明度小于`1`，开启允许组不透明就需要混合计算，这样就会触发离屏渲染：
 
-![Pasted Graphic 9.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e838459bc6b48deb184dee89b890155~tplv-k3u1fbpfcp-watermark.image?)
-- 如果本身还有子视图，父视图不透明度为`1`，开启允许组不透明就需要混合计算，这样不会触发离屏渲染：
+<img width="339" alt="Pasted Graphic 9" src="https://user-images.githubusercontent.com/126937296/224495545-20034a2a-3ded-452d-976a-646f51278fd6.png">
 
-![1__#$!@%!#__Pasted Graphic.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e37f0edac4141b99296bc09d5856f9f~tplv-k3u1fbpfcp-watermark.image?)
+- 如果本身还有子视图，父视图不透明度为`1`，开启允许组不透明就需要混合计算，这样不会触发离屏渲染：
+- 
+<img width="249" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224495555-5758a8b7-ce76-415c-9dd2-cc0113772be4.png">
 
 ## 七、.圆角
 #### 1. 设置背景颜色和圆角
@@ -140,12 +142,12 @@
 ```
 会触发离屏渲染：
 
-![1__#$!@%!#__Pasted Graphic 5.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/572f4aea42ea45b386d76a5cb88871a6~tplv-k3u1fbpfcp-watermark.image?)
+<img width="337" alt="1__#$!@%!#__Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/224495571-908a4ba7-3373-4de9-b93c-a5c510b19fe0.png">
 
 #### 2. 只设置圆角
 不会触发：
 
-![1__#$!@%!#__Pasted Graphic 7.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23b7cea00d724d94aa513c1d3129fa39~tplv-k3u1fbpfcp-watermark.image?)
+<img width="219" alt="1__#$!@%!#__Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/224495577-fe3d63ad-2c23-4d87-9ca0-c6aff9eaed67.png">
 
 #### 3. 给子视图标签添加圆角和颜色
 
@@ -159,7 +161,7 @@
 ```
 发现绿色标签不会：
 
-![1__#$!@%!#__Pasted Graphic 8.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bdf534940ea749c280322d638774298f~tplv-k3u1fbpfcp-watermark.image?)
+<img width="233" alt="1__#$!@%!#__Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/224495603-841754f1-1181-4b8c-8be1-696c96edfb96.png">
 
 #### 4. 如果给label的layer层添加颜色
 
@@ -173,13 +175,13 @@
 ```
 会触发离屏渲染：
 
-![1__#$!@%!#__Pasted Graphic 9.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2f5982c8d6154271863ac390597cc224~tplv-k3u1fbpfcp-watermark.image?)
+<img width="224" alt="1__#$!@%!#__Pasted Graphic 9" src="https://user-images.githubusercontent.com/126937296/224495612-b57f4422-2d59-43f3-a4b2-fb470a2d1c04.png">
 
 >因为`label`的`layer`设置背景颜色，它实际是给`contents`设置颜色
 
 图片设置圆角的时候，实际是设置给`border`和`backgroundColor`设置，不会设置`contents`，所以图片需要`Clips to Bounds`。
 
-![Pasted Graphic 10.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b0ab7e58ce24efb9b2f72ab6e3e8d99~tplv-k3u1fbpfcp-watermark.image?)
+<img width="743" alt="Pasted Graphic 10" src="https://user-images.githubusercontent.com/126937296/224495618-deb24a77-af9c-4bb4-bde1-376741be0b99.png">
 
 >在`iOS9`之后给视图设置单纯设置圆角不会触发离屏渲染，但是如果同时操作`contents + backgroundColor/border`就会触发。
 
@@ -199,7 +201,8 @@
 ```
 不会触发离屏渲染：
 
-![Pasted Graphic 11.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d480f7e655c4dec9aa84cf4fdbcf761~tplv-k3u1fbpfcp-watermark.image?)
+<img width="164" alt="Pasted Graphic 11" src="https://user-images.githubusercontent.com/126937296/224495632-0bb16e22-9961-4195-9a6e-8142f01db551.png">
+
 
 ## 九、drawRect使用
 
