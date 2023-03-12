@@ -1,9 +1,9 @@
-
+![](https://github.com/fastlane/fastlane/raw/master/fastlane/assets/fastlane_text.png?raw=true)
 # Fastlane
 >fastlane是一个旨在简化 Android 和 iOS 部署的开源平台，可以自动化开发和发布工作流程的各个方面。
-
+<!-- 
 <p><a class="badge" href="https://twitter.com/FastlaneTools"><img alt="Twitter: @FastlaneTools" src="https://img.shields.io/badge/contact-@FastlaneTools-blue.svg?style=flat" />
-
+ -->
 ## 一、安装Xcode命令行工具
 为`fastlane`安装Xcode命令行工具：
 ```js
