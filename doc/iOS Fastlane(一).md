@@ -1,9 +1,6 @@
 
-<p><a class="badge" href="https://twitter.com/FastlaneTools"><img alt="Twitter: @FastlaneTools" src="https://img.shields.io/badge/contact-@FastlaneTools-blue.svg?style=flat" />
-
-
-
 # Fastlane
+<p><a class="badge" href="https://twitter.com/FastlaneTools"><img alt="Twitter: @FastlaneTools" src="https://img.shields.io/badge/contact-@FastlaneTools-blue.svg?style=flat" />
 
 ## 一、安装Xcode命令行工具
 为`fastlane`安装Xcode命令行工具：
