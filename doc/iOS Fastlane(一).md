@@ -1,5 +1,7 @@
 
 # Fastlane
+>fastlane是一个旨在简化 Android 和 iOS 部署的开源平台，可以自动化开发和发布工作流程的各个方面。
+
 <p><a class="badge" href="https://twitter.com/FastlaneTools"><img alt="Twitter: @FastlaneTools" src="https://img.shields.io/badge/contact-@FastlaneTools-blue.svg?style=flat" />
 
 ## 一、安装Xcode命令行工具
@@ -7,7 +9,8 @@
 ```js
 xcode-select --install
 ```
-![Pasted Graphic.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/054c0e752cff4feb815810d952dbb3b9~tplv-k3u1fbpfcp-watermark.image?)
+<img width="498" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224544049-2550b7bd-350c-4fc8-8862-76d557297c82.png">
+
 如果安装过会提示：
 
 ```js
@@ -81,13 +84,17 @@ fastlane init
 ```
 项目里多了这三个文件：
 
-![Pasted Graphic 1.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee0e36dd18ce4fd88f383372eaa74e04~tplv-k3u1fbpfcp-watermark.image?)
+<img width="319" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/224544077-d78d4d89-03ce-47e2-a866-68ea2b333c7f.png">
 
 ## 三、安装蒲公英插件
 
 ```js
 fastlane add_plugin pgyer
 ```
+注册蒲公英，拿到`API Key`和`User Key`
+
+<img width="618" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224544029-ebed45e8-23f8-44be-a42c-3b60bba7db56.png">
+
 简单配置一下：
 
 ```js
