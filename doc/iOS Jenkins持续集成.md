@@ -191,6 +191,8 @@ mkdir -p ${PGYERLOG_PATH}
 touch "${PGYERLOG_PATH}/log.txt"
 
  ```
+ 
+ ## 参考：
 - [iOS Fastlane自动构建打包、发布、部署jenkins](https://www.jianshu.com/p/dac1ce3d7de8)
 - [Jenkins-iOS自动打包流程](https://www.jianshu.com/p/531c959b8cf8)
 - [Jenkins 实现iO项目自动打包](https://www.jianshu.com/p/68a19f28c51a)
