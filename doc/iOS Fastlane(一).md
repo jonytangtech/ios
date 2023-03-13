@@ -107,12 +107,16 @@ lane :develop do |options|
 target = "FastlaneDemo"
 configuration = "Debug"
 gym(scheme: target, configuration: configuration, export_method:"development")
-pgyer(api_key: "xxxxxxxxxx”, user_key: “xxxxxx”,update_description: options[:desc])
+pgyer(api_key: "xxxxxxxxxx”)
 end
 end
 ```
-运行:
+终端运行：
 
+```js
+fastlane develop
+```
+结果：
 ```js
 +------+------------------+-------------+
 |           fastlane summary            |
@@ -125,6 +129,17 @@ end
 
 [17:39:32]: fastlane.tools finished successfully 🎉
 ```
+可以看到上传蒲公英成功：
+
+![2__#$!@%!#__Pasted Graphic.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19143787fec547bca08abe1e78e7615a~tplv-k3u1fbpfcp-watermark.image?)
+
+点击应用信息：
+
+![Pasted Graphic 4.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c90fb9ea34b4e9a8c3684595feeb4da~tplv-k3u1fbpfcp-watermark.image?)
+
+在项目本地也会生成一个`ipa`包
+
+![Pasted Graphic 3.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ca8e1f1e8ae4d188317e8ceb74fd5ec~tplv-k3u1fbpfcp-watermark.image?)
 ## 四、分发到`Appstore`
 
 
