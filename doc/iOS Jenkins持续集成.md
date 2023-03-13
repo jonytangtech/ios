@@ -6,7 +6,7 @@
 ```js
 brew install jenkins-lts
 ```
-启动jenkins服务:
+启动`jenkins`服务:
 
 ```js
 jonytang@Mac ~ % brew services start jenkins-lts
@@ -77,11 +77,11 @@ echo $PATH
 
 <img width="707" alt="Pasted Graphic 12" src="https://user-images.githubusercontent.com/126937296/224757560-35b80b44-ecbc-4386-a724-9f0cf2bc74ba.png">
 
-选择git，输入仓库的https地址：
+选择`git`，输入仓库的`https`地址：
 
 <img width="859" alt="Pasted Graphic 13" src="https://user-images.githubusercontent.com/126937296/224757611-2d237b35-f815-4988-aa4e-bd5da76e8fe9.png">
 
-Credentials点击添加，用户名和密码输入github的账号和密码：
+`Credentials`点击添加，用户名和密码输入`git`的账号和密码：
 
 <img width="941" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224757638-1c208b01-8221-4bf0-8aa3-78b4a221faea.png">
 
@@ -194,7 +194,7 @@ mkdir -p ${PGYERLOG_PATH}
 touch "${PGYERLOG_PATH}/log.txt"
 
  ```
- 构建打包上传
+## 构建打包上传
  
  ## 参考：
 - [iOS Fastlane自动构建打包、发布、部署jenkins](https://www.jianshu.com/p/dac1ce3d7de8)
