@@ -20,50 +20,49 @@ jonytang@Mac ~ %
 ```
 浏览器打开 `http://localhost:8080`:
 
-![Pasted Graphic.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/caa41d8e13f147ea88b9b42fb43547af~tplv-k3u1fbpfcp-watermark.image?)
+<img width="987" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224756791-cb12e01c-2ef5-47e7-9a09-b5ba438d6f7d.png">
 
 输入密码：
 
-![Pasted Graphic 1.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0eaa7671f2fd4c688ac0838e605468ee~tplv-k3u1fbpfcp-watermark.image?)
+<img width="979" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/224756848-bea11e7e-4c32-4ce6-b6c5-1f1fbc6ed9cb.png">
 
 >选择第一个安装推荐的插件
 
 等待安装：
 
-![Pasted Graphic 2.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/242204fc8d14416c9083ca4faa39f620~tplv-k3u1fbpfcp-watermark.image?)
+<img width="983" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/224756946-a42db3c6-04ad-45b8-99c6-f292c5a399f8.png">
 
 有些会安装失败，点击重试:
 
-![Pasted Graphic 3.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e68b3f98c8042f5bf67ca3dff0232ad~tplv-k3u1fbpfcp-watermark.image?)
+<img width="982" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/224757016-a4cea8ea-fb73-443a-96da-a4a1613826bb.png">
 
 安装完成，创建管理员：
 
-![Pasted Graphic 4.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a49cb97168949aaacd72c04926a71e4~tplv-k3u1fbpfcp-watermark.image?)
+<img width="985" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/224757067-f7d0574a-7cfa-463b-a3e4-e76af5759fb4.png">
 
 创建完成：
 
-![Pasted Graphic 5.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd5a62b41bf44244913e043456e1ef85~tplv-k3u1fbpfcp-watermark.image?)
+<img width="615" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/224757124-9dc7125c-d73c-4f91-acd6-790a8149d596.png">
 
 点击按钮进入：
 
-![Pasted Graphic 6.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa9b4518164f4aaa8ef685f35d890aa1~tplv-k3u1fbpfcp-watermark.image?)
+<img width="1240" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/224757171-4481397a-c0ea-447d-98f0-da7dfec4f1b8.png">
 
 报一些错：
 
-![Pasted Graphic 8.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6680251c0b014332870b664c2c91c2ac~tplv-k3u1fbpfcp-watermark.image?)
+<img width="1014" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/224757241-970aa648-192e-4b91-94a5-d6867305cd6c.png">
 
 根据提示，安装插件，重启jenkins:
 ```js
 brew services start jenkins-lts
 ```
-
-![Pasted Graphic 9.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/219f82d470524f75bddb5d42563d072d~tplv-k3u1fbpfcp-watermark.image?)
+<img width="1236" alt="Pasted Graphic 9" src="https://user-images.githubusercontent.com/126937296/224757290-b12c2220-b440-4f41-81c3-445da669e3ca.png">
 
 >已经没有红色的提示
 
-可以看到最下面安装的插件
+可以看到最下面安装的插件：
 
-![Pasted Graphic 10.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8368ee6ef0a044df81f2c320855d5971~tplv-k3u1fbpfcp-watermark.image?)
+<img width="625" alt="Pasted Graphic 10" src="https://user-images.githubusercontent.com/126937296/224757340-5126c2fe-1f9c-4638-b328-3e55936400f1.png">
 
 配置环境变量，终端输入：
 
@@ -72,27 +71,31 @@ echo $PATH
 ```
 复制粘贴：
 
-![Pasted Graphic 11.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8d016fe0199947c9be050d484f25384b~tplv-k3u1fbpfcp-watermark.image?)
+<img width="1081" alt="Pasted Graphic 11" src="https://user-images.githubusercontent.com/126937296/224757526-84c04590-5464-4d0e-9de1-2e4eb1a7cc96.png">
 
 新建任务，选择第一个：
 
-![Pasted Graphic 13.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d0a92d283bde4535bd8e0211d917ca75~tplv-k3u1fbpfcp-watermark.image?)
+<img width="707" alt="Pasted Graphic 12" src="https://user-images.githubusercontent.com/126937296/224757560-35b80b44-ecbc-4386-a724-9f0cf2bc74ba.png">
 
 选择git，输入仓库的https地址：
 
-![1__#$!@%!#__Pasted Graphic.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94863c248e304aa6a976f4bea2862cda~tplv-k3u1fbpfcp-watermark.image?)
+<img width="859" alt="Pasted Graphic 13" src="https://user-images.githubusercontent.com/126937296/224757611-2d237b35-f815-4988-aa4e-bd5da76e8fe9.png">
 
 Credentials点击添加，用户名和密码输入github的账号和密码：
 
-![Pasted Graphic 14.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/579007658c83484698a41cbaee609fd2~tplv-k3u1fbpfcp-watermark.image?)
+<img width="941" alt="1__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224757638-1c208b01-8221-4bf0-8aa3-78b4a221faea.png">
 
 勾选丢弃构建：
 
-![1__#$!@%!#__Pasted Graphic 1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/241ccffd220649d6bbea29656a1de6ea~tplv-k3u1fbpfcp-watermark.image?)
+增加构建步骤 -> 执行shell：<img width="617" alt="1__#$!@%!#__Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/224757690-a1a096ce-3f06-47b9-8922-a30002c01534.png">
+
+输入github用户名和密码
+
+<img width="761" alt="Pasted Graphic 14" src="https://user-images.githubusercontent.com/126937296/224757845-6001f41d-f790-487e-a9e9-cc4ad129c627.png">
 
 增加构建步骤 -> 执行shell：
 
-![1__#$!@%!#__Pasted Graphic 2.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aedbfcb27cc144978057f85c4c8dc244~tplv-k3u1fbpfcp-watermark.image?)
+<img width="381" alt="1__#$!@%!#__Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/224758007-bf25dfad-f356-4b5b-a9ef-900a370a28ad.png">
 
 添加打包脚本，保存。
 ```js
@@ -191,6 +194,7 @@ mkdir -p ${PGYERLOG_PATH}
 touch "${PGYERLOG_PATH}/log.txt"
 
  ```
+ 构建打包上传
  
  ## 参考：
 - [iOS Fastlane自动构建打包、发布、部署jenkins](https://www.jianshu.com/p/dac1ce3d7de8)
