@@ -131,15 +131,16 @@ fastlane develop
 ```
 可以看到上传蒲公英成功：
 
-![2__#$!@%!#__Pasted Graphic.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19143787fec547bca08abe1e78e7615a~tplv-k3u1fbpfcp-watermark.image?)
+<img width="281" alt="2__#$!@%!#__Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/224601142-58fb2d53-c4de-4b76-b43f-12cd62baf793.png">
 
 点击应用信息：
 
-![Pasted Graphic 4.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c90fb9ea34b4e9a8c3684595feeb4da~tplv-k3u1fbpfcp-watermark.image?)
+<img width="681" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/224601152-e19d0044-8288-4ad9-9840-81f5f7e0a755.png">
 
 在项目本地也会生成一个`ipa`包
 
-![Pasted Graphic 3.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ca8e1f1e8ae4d188317e8ceb74fd5ec~tplv-k3u1fbpfcp-watermark.image?)
+<img width="426" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/224601171-9a4e1770-8c55-428b-b4e0-d384d326f484.png">
+
 ## 四、分发到`Appstore`
 
 
@@ -243,7 +244,7 @@ it using 'username'
 - [fastlane](https://docs.fastlane.tools/)
 - [蒲公英官网文章](https://open.pgyer.com/9W0Hy3)
 - [使用Fastlane自动部署APP](https://www.jianshu.com/p/2383fe17b9ec/)
-
+- [fastlane + fir 自动化打包遇到的坑](https://www.jianshu.com/p/c8f3c106bada)
 
 
 
