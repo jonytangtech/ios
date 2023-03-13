@@ -18,17 +18,17 @@
 - [离屏渲染（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
 - [离屏渲染（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
 
-# 多线索【上】
-- [多线索【上】（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
-- [多线索【上】（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
-- [多线索【上】（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
+# 多线程【上】
+- [多线程【上】（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
+- [多线程【上】（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
+- [多线程【上】（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
 
-# 多线索【中】
-- [多线索【中】（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
-- [多线索【中】（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
-- [多线索【中】（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
+# 多线程【中】
+- [多线程【中】（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
+- [多线程【中】（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
+- [多线程【中】（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
 
 # 多线索【下】
-- [多线索【下】（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
-- [多线索【下】（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
-- [多线索【下】（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
+- [多线程【下】（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
+- [多线程【下】（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
+- [多线程【下】（三）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
