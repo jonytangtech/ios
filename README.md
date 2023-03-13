@@ -11,6 +11,9 @@
 # Fastlane自动化打包
 - [Fastlane自动化打包](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20Fastlane(%E4%B8%80).md)
 
+# Jenkins持续部署
+- [Jenkins持续部署](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20Fastlane(%E4%B8%80).md)
+
 # 离屏渲染
 - [离屏渲染（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
 - [离屏渲染（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
