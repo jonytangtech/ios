@@ -20,4 +20,3 @@
 
 # 单元测试与UI测试
 - [单元测试与UI测试（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%B8%80).md)
-- [单元测试与UI测试（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93(%E4%BA%8C).md)
