@@ -2,11 +2,11 @@
 ## 前言：
 我们一般对网络请求下来的比较大的数据做缓存，如果没有网络，或者是请求到的标识和之前的标识一致，表示数据没有变动，则可以使用缓存加载，不需要重新网络拉取数据，这里一般使用**YYCache**。
 
-![Pasted Graphic 1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bfdcadb7a70445bb88df9747d5dce2ef~tplv-k3u1fbpfcp-watermark.image?)
+<img width="734" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/225916279-11dca6e7-6705-4570-9f26-253fa5d7d000.png">
 
 从`git`上把`YYCache pod`下来：
 
-![Pasted Graphic.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6be80c1e224446a19623643a74265622~tplv-k3u1fbpfcp-watermark.image?)
+<img width="234" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/225916328-0fddc857-945d-4c7c-97f3-c9db852c8d7c.png">
 
 >可以看到`YYCache`的文件结构还是相对简单，除了`YYCache`这个对外使用的接口文件，还有`YYDiskCache`这个磁盘缓存，`YYKVStorage`这个元数据键值存储，还有`YYMemoryCache`这个内存缓存。
 ## 一、YYCache：
@@ -121,9 +121,9 @@
 >在`YYDiskCache`中可以看到内联阈值是`20KB`，`_inlineThreshold`被初始化为`20KB`。
 
 点进`YYKVStorageType`看，发现有三种存储类型：</br>
-一、文件</br>
-二、数据库</br>
-三、自选</br>
+一、文件 
+二、数据库
+三、自选
 
 ```js
 typedef NS_ENUM(NSUInteger, YYKVStorageType) {
