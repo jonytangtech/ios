@@ -1,6 +1,6 @@
 # YYCache（一）
 ## 前言：
-我们一般对网络请求下来的比较大的数据做缓存，如果没有网络，或者是请求到的标识和之前的标识一致，表示数据没有变动，则可以使用缓存加载，不需要重新网络拉取数据，这里一般使用YYCache。
+我们一般对网络请求下来的比较大的数据做缓存，如果没有网络，或者是请求到的标识和之前的标识一致，表示数据没有变动，则可以使用缓存加载，不需要重新网络拉取数据，这里一般使用**YYCache**。
 
 ![Pasted Graphic 1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bfdcadb7a70445bb88df9747d5dce2ef~tplv-k3u1fbpfcp-watermark.image?)
 
