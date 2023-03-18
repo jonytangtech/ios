@@ -88,10 +88,12 @@ YYCacheDemo[3304:73220] name = 张9 phoneNumber = 15888899999
 二、数据修剪
 
 **YYMemoryCache**：
-![Pasted Graphic.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3a7faf016e9341ca8484b8b7dcce0c0d~tplv-k3u1fbpfcp-watermark.image?)
+
+<img width="323" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/226116624-147311aa-1959-4a72-b2b2-0869e33a5b08.png">
+
 **YYDiskCach**：
 
-![Pasted Graphic 1.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a967fec96057468c9b5f685fd4a5dfef~tplv-k3u1fbpfcp-watermark.image?)
+<img width="308" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/226116633-1cbb2875-b34f-44a9-a725-973635765fe0.png">
 
 测试给内存添加数量限制：
 
