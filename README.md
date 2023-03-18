@@ -23,4 +23,4 @@
 
 # YYCache
 - [YYCache（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20YYCache(%E4%B8%80).md)
-- [YYCache（二）](https://github.com/jonytangtech/ios/blob/main/iOS%20YYCache(%E4%B8%80).md)
+- [YYCache（二）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20YYCache(%E4%BA%8C).md)
