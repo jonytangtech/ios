@@ -42,7 +42,7 @@
 ```
 模拟器添加两个按钮，一个写入，一个读取：
 
-![Pasted Graphic 1.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/edea88d386c14516a7785f143f1239bf~tplv-k3u1fbpfcp-watermark.image?)
+<img width="264" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/226541040-f560ed94-b362-450a-8b8a-b3067376062a.png">
 
 点击把自定义数据存进本地：
 
@@ -117,7 +117,7 @@ NSCodingDemo[48440:1221308]
 
 存档方法废弃提醒：
 
-![Pasted Graphic 3.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/31306e68c05b41828b623f2f9c6a791e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="777" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/226541090-a0a5e8aa-d8b1-42d0-a289-a2d84804bd6f.png">
 
 修改存档方法：
 
@@ -128,7 +128,7 @@ NSData *perData = [NSKeyedArchiver archivedDataWithRootObject:userArr requiringS
 ```
 解档方法废弃提醒：
 
-![Pasted Graphic 4.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc9d98a93d2f4e719481ab06b5aaa5da~tplv-k3u1fbpfcp-watermark.image?)
+<img width="788" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/226541114-a46bf9ab-ae29-4102-b6bd-d8a5705db509.png">
 
 修改废弃提醒：
 
@@ -183,13 +183,14 @@ NSCodingDemo[54390:1372398]
 ## 四、YYCacheDemo适配问题
 由于`YYCache`很久不更新，在`YYDiskCache`里面，`- (id<NSSecureCoding>)objectForKey:(NSString *)key`方法里面，也是提示方法废弃：
 
-![Pasted Graphic.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/01afe2ea8b8c4622a8d41e3f51da0967~tplv-k3u1fbpfcp-watermark.image?)
+<img width="682" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/226541167-df029bd3-485d-40f4-92c3-96f857c9e138.png">
+
 ```js
 object = [NSKeyedUnarchiver unarchiveObjectWithData:item.value];
 ```
 下面的`- (void)setObject:(id<NSSecureCoding>)object forKey:(NSString *)key`方法里面，也是提示方法废弃：
 
-![1__#$!@%!#__Pasted Graphic 1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56a8b686db0f4807bb4959e9aba9bf4e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="677" alt="1__#$!@%!#__Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/226541185-fe16b7be-d509-4790-971a-b5e89ac15e20.png">
 
 ```js
 value = [NSKeyedArchiver archivedDataWithRootObject:object requiringSecureCoding:YES error:&error];
@@ -236,7 +237,7 @@ else {
 ```
 运行测试，发现找不到自定义的类：
 
-![Pasted Graphic 2.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d0d7464988b4e67a72dba2f7ac443aa~tplv-k3u1fbpfcp-watermark.image?)
+<img width="937" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/226541237-8eb4c84b-e1c0-41ad-9ebf-5bf968c4a0fe.png">
 
 就是需要指定一个具体的类名，让他做解码操作，由于`YYCache`是`pod`下来的，不能直接导入文件，为了避免相互引用，只用`runtime`获取类：
 
