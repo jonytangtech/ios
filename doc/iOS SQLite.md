@@ -1,6 +1,6 @@
 # Sqlite
 ## 一、前言
->虽然平时开发不会直接使用`Sqlite`，但是作为一个轻量级数据库，理解和掌握其基本原理和使用还是有必要的。`FMDB`就是对`Sqlite`的封装，并且微信团队在自研自己的数据库前也是使用`Sqlite`。
+>虽然平时开发不会直接使用`SQLite`，但是作为一个轻量级数据库，理解和掌握其基本原理和使用还是有必要的。`FMDB`就是对`SQLite`的封装，并且微信团队在自研自己的数据库前也是使用`SQLite`。
 
 点击项目名称 -> `TAGETS` -> `Build Phases` -> `Link Binary With Libraries` 点击添加`libsqlite3.tbd`：
 
@@ -474,5 +474,12 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ![Pasted Graphic 18.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6c721c7319844881ba47773c31242c5a~tplv-k3u1fbpfcp-watermark.image?)
 
 ## 四、总结
-`Sqlite`接口都是`C`语言，并不面向对象，所有操作需要自己手写`SQL`语句。
+`SQLite`接口都是`C`语言，并不面向对象，所有操作需要自己手写`SQL`语句。
+
+### 参考：
+- [iOS-SQLite的使用](https://www.jianshu.com/p/4a0e6773c694)
+- [iOS数据库的使用（二）：sqlite的基本使用](https://www.jianshu.com/p/f95c5a5b9af3)
+- [iOS中sqlite3的增、删、改、查](https://www.jianshu.com/p/568cba50c2a6)
+- [SQLite清空表并将自增列归零](http://www.360doc.com/content/22/0418/14/67767017_1027092464.shtml)
+- [iOS 中使用 SQLite](https://www.jianshu.com/p/2333fad79f2f)
 
