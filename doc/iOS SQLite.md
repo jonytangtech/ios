@@ -4,7 +4,7 @@
 
 点击项目名称 -> `TAGETS` -> `Build Phases` -> `Link Binary With Libraries` 点击添加`libsqlite3.tbd`：
 
-![Pasted Graphic.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f46cfd6bc0674ddf8462942a32f4c57c~tplv-k3u1fbpfcp-watermark.image?)
+<img width="850" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/227779824-9e4c138b-6aa8-493b-b8d5-e97c4694eac8.png">
 
 ## 二、代码准备
 
@@ -24,9 +24,9 @@
 /**年龄文本框*/
 @property (weak, nonatomic) IBOutlet UITextField *ageTF;
 ```
-模拟器先拉好UI：
+模拟器先拉好**UI**：
 
-![Pasted Graphic 1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7df48b1db6d34fae9f79b18f410b89aa~tplv-k3u1fbpfcp-watermark.image?)
+<img width="336" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/227779833-9caa14af-d7a6-4bf4-bee4-0842c807184f.png">
 
 ### 1、生成路径
 
@@ -103,11 +103,11 @@ Sqlite3Demo[46764:3296271] 创建表成功
 ```
 打开生成路径，可以看到一个`person_info.sqlite`的文件：
 
-![Pasted Graphic 4.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f906fcc5807471f915603c229feca76~tplv-k3u1fbpfcp-watermark.image?)
+<img width="235" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/227779861-f32f9d35-4645-492e-909a-57c00ee44038.png">
 
 用`Navicat`打开`person_info.sqlite`，`person`的表已经创建好了：
 
-![Pasted Graphic 3.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9af7ffe74f40430489a6e46ee020838e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="553" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/227779874-997f6192-8116-4a72-a79c-31ce28c443f0.png">
 
 ### 4、插入多条测试数据
 
@@ -197,15 +197,15 @@ Sqlite3Demo[47220:3310420] 插入数据成功 - 张10
 ```
 到`Navicat`里看一下，已经有**10**条记录：
 
-![1__#$!@%!#__Pasted Graphic 3.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc43c40de824444d8eb9e7bd666105b1~tplv-k3u1fbpfcp-watermark.image?)
+<img width="558" alt="1__#$!@%!#__Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/227779906-bc97cc6f-ea1d-4587-a022-e4033e14ee6c.png">
 
 还有一个`sqlite_sequence`，`seq`是**10**：
 
-![1__#$!@%!#__Pasted Graphic 4.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3ffcffee618e46a0857accd840656b65~tplv-k3u1fbpfcp-watermark.image?)
+<img width="394" alt="1__#$!@%!#__Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/227779922-46c6bfce-4f16-4329-917d-0a29291e143e.png">
 
 >注：如果没有看到数据，点击左边下面的按钮刷新，右键刷新无效。
 
-![1__#$!@%!#__Pasted Graphic 1.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0aeb6f4b3f844a86909c428f7196a025~tplv-k3u1fbpfcp-watermark.image?)
+<img width="258" alt="1__#$!@%!#__Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/227779930-bb7affd2-bcb7-4202-bd57-7c0161e89242.png">
 
 ## 三、CRUD增删改查操作
 
@@ -224,7 +224,7 @@ Sqlite3Demo[47220:3310420] 插入数据成功 - 张10
 ```
 `name`填入夏洛特，`age`填**24**，点击增：
 
-![Pasted Graphic 5.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/274f3c33ba214f10b9077aa8be7cf812~tplv-k3u1fbpfcp-watermark.image?)
+<img width="335" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/227779945-9d38bd28-71f9-456b-88ef-818890aa1023.png">
 
 ```js
 Sqlite3Demo[47564:3319611] 插入数据成功
@@ -247,7 +247,7 @@ Sqlite3Demo[47564:3319611] 插入数据成功
 ```
 回到`Navicat`的`person`表点击刷新，可以看到新增的一条记录：
 
-![Pasted Graphic 6.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d67ae1f7a354697b330c7762b80e6ed~tplv-k3u1fbpfcp-watermark.image?)
+<img width="461" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/227779957-66d9bfc0-82b7-4503-a0a5-1367fffaa2e9.png">
 
 ### 2、删除一条数据
 
@@ -264,7 +264,8 @@ Sqlite3Demo[47564:3319611] 插入数据成功
 ```
 把`id = 5` 的数据删除掉：
 
-![Pasted Graphic 7.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/062ac1e18f1f4fc9bbff5d7cc346e730~tplv-k3u1fbpfcp-watermark.image?)
+<img width="323" alt="Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/227779963-cf0b952f-9fe0-4389-ad30-057f63440770.png">
+
 点击删除：
 
 ```js
@@ -287,7 +288,7 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 在`Navicate`里查看：
 
-![Pasted Graphic 8.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca471c71ad6c4fe4a80fce62b041ffbb~tplv-k3u1fbpfcp-watermark.image?)
+<img width="457" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/227779978-5445263b-1509-4fd6-b88c-9d5b43f20e72.png">
 
 ### 3、修改一条数据
 
@@ -323,7 +324,7 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 把`id = 10`的名字改为赵云：
 
-![Pasted Graphic 9.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ab74a851f1841db8d4fd605f369aae7~tplv-k3u1fbpfcp-watermark.image?)
+<img width="314" alt="Pasted Graphic 9" src="https://user-images.githubusercontent.com/126937296/227779994-a72a4451-c440-438b-9357-333a1dd70964.png">
 
 查看全部：
 
@@ -365,7 +366,7 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 查`id = 4`的记录：
 
-![Pasted Graphic 10.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e075820b56094f279f247ea0eb2dbd6d~tplv-k3u1fbpfcp-watermark.image?)
+<img width="333" alt="Pasted Graphic 10" src="https://user-images.githubusercontent.com/126937296/227780014-f2dfe3eb-78f7-4dc1-b845-247efdb1746f.png">
 
 ```js
 ------------------------------
@@ -373,7 +374,7 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 查年龄小于**25**的记录：
 
-![Pasted Graphic 11.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c87a21b882f0412e8447fd4d511e143d~tplv-k3u1fbpfcp-watermark.image?)
+<img width="332" alt="Pasted Graphic 11" src="https://user-images.githubusercontent.com/126937296/227780027-c00fabd4-f708-4076-857e-65a8c13ca795.png">
 
 点击查按钮：
 ```js
@@ -417,11 +418,11 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 查看`Navicat`的`person`：
 
-![Pasted Graphic 12.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/832c3f084f084cecae4263857fef866b~tplv-k3u1fbpfcp-watermark.image?)
+<img width="436" alt="Pasted Graphic 12" src="https://user-images.githubusercontent.com/126937296/227780042-26e72690-d4e1-4535-bf29-c771cad685cf.png">
 
 查看`squence`，点击刷新，`id`为**21**完全一致：
 
-![Pasted Graphic 13.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e9f83eda02a4dc98bd506f5fc8bca6e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="353" alt="Pasted Graphic 13" src="https://user-images.githubusercontent.com/126937296/227780055-44d2a29f-f36a-455e-914e-ff85f95d9a78.png">
 
 点击清空：
 
@@ -437,16 +438,15 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 表数据已经被清空：
 
-![Pasted Graphic 14.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/500b91b7ca0f496a9c4fac5aec36de33~tplv-k3u1fbpfcp-watermark.image?)
+<img width="458" alt="Pasted Graphic 14" src="https://user-images.githubusercontent.com/126937296/227780063-c53f5900-585f-4c84-8afd-7354461635fd.png">
 
 这个时候`sqlite_sequence`还是**21**，没有归**0**：
 
-
-![Pasted Graphic 15.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6c90cd3774c84afb8bb541528fd43338~tplv-k3u1fbpfcp-watermark.image?)
+<img width="394" alt="Pasted Graphic 15" src="https://user-images.githubusercontent.com/126937296/227780073-41401f4e-9eca-4a26-a4ae-e00d33f62347.png">
 
 此时点击插入**10**条数据，发现`id`从**21**开始：
 
-![Pasted Graphic 16.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc82079c9d2b449a9fd65edd05c2f384~tplv-k3u1fbpfcp-watermark.image?)
+<img width="466" alt="Pasted Graphic 16" src="https://user-images.githubusercontent.com/126937296/227780094-0c9d86ae-5fbd-46b3-9efd-e89f7dd2252a.png">
 
 并没有真正的清空，需要给数据添加`seq`归**0**操作：
 >sqlite3 没有truncate关键字：
@@ -467,11 +467,11 @@ Sqlite3Demo[47564:3319611] 删除数据成功
 ```
 再点击清空：
 
-![Pasted Graphic 17.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/764f3b6068364e58bc144533ecc8ee09~tplv-k3u1fbpfcp-watermark.image?)
+<img width="387" alt="Pasted Graphic 17" src="https://user-images.githubusercontent.com/126937296/227780108-b63027cb-477c-4773-9253-b571e0f09eaf.png">
 
 点击插入多条，`id`又从**1**开始：
 
-![Pasted Graphic 18.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6c721c7319844881ba47773c31242c5a~tplv-k3u1fbpfcp-watermark.image?)
+<img width="464" alt="Pasted Graphic 18" src="https://user-images.githubusercontent.com/126937296/227780137-65e92401-e402-4216-8bc3-589e1aa38147.png">
 
 ## 四、总结
 `SQLite`接口都是`C`语言，并不面向对象，所有操作需要自己手写`SQL`语句。
