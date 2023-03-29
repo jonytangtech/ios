@@ -64,10 +64,9 @@
 ```
 ### 3、准备好UI界面
 
-![Pasted Graphic.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c3927966b9d4cd4b93527805f37e1a7~tplv-k3u1fbpfcp-watermark.image?)
+<img width="340" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/228606649-17e077f9-1a68-4577-973c-52da1c8f5860.png">
 
 点击模拟器`查全部`按钮，打开数据库和创建表：
-
 
 ```js
 FMDBDemo[95834:1335897] path == /Users/xxxxx/Library/Developer/CoreSimulator/Devices/
@@ -173,7 +172,7 @@ FMDBDemo[95834:1335897] 插入数据成功 - 张10
 ```
 在`Navicat`里查看：
 
-![Pasted Graphic 2.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fb150511a104c00a1f27cac2a2a84b5~tplv-k3u1fbpfcp-watermark.image?)
+<img width="504" alt="Pasted Graphic 2" src="https://user-images.githubusercontent.com/126937296/228606743-a5dc1563-46fb-4e23-8b36-418657d56c4b.png">
 
 ### 6、清空表数据
 
@@ -212,10 +211,11 @@ FMDBDemo[95834:1335897] 自增主键归零
 ```
 `Navicat`里查看表，数据确实被清空：
 
-![Pasted Graphic 3.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a56a9579adbd475d8f98098a960d5f99~tplv-k3u1fbpfcp-watermark.image?)
+<img width="507" alt="Pasted Graphic 3" src="https://user-images.githubusercontent.com/126937296/228606869-1caa71d0-2f0e-473f-80a1-b17bdd10b4d1.png">
+
 `sqlite_sequenece`也变为 **0** ：
 
-![Pasted Graphic 4.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/af6c3c8c32114cdd8afc97b8ababec70~tplv-k3u1fbpfcp-watermark.image?)
+<img width="384" alt="Pasted Graphic 4" src="https://user-images.githubusercontent.com/126937296/228606912-900e28ca-5a49-4b53-a707-7770328262ea.png">
 
 ## 二、增删改查 操作
 ### 1、新增数据
@@ -238,7 +238,7 @@ FMDBDemo[95834:1335897] 自增主键归零
 ```
 模拟器添加数据，点击`增`按钮：
 
-![Pasted Graphic 5.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56ca06f50d0f4f3ca216e30c5a30455f~tplv-k3u1fbpfcp-watermark.image?)
+<img width="335" alt="Pasted Graphic 5" src="https://user-images.githubusercontent.com/126937296/228606973-fc61d9ee-65c8-4341-b1da-2af543080cec.png">
 
 运行：
 ```js
@@ -289,7 +289,7 @@ FMDBDemo[95834:1335897] 插入数据成功
 ```
 删除`id`为 **5** 的数据：
 
-![Pasted Graphic 6.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aa7ac727005645f687ce87f11638d865~tplv-k3u1fbpfcp-watermark.image?)
+<img width="335" alt="Pasted Graphic 6" src="https://user-images.githubusercontent.com/126937296/228607029-eb248842-fc56-4b33-adac-5c2479674ec5.png">
 
 点击`删`按钮，查看打印数据,`id`为 **5** 的数据已被删除：
 
@@ -327,7 +327,8 @@ FMDBDemo[95834:1335897] 插入数据成功
 ```
 将`id`为 **10** 的名字改为妲己：
 
-![Pasted Graphic 7.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6fe20774b96b4bef888195eb89898de0~tplv-k3u1fbpfcp-watermark.image?)
+<img width="334" alt="Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/228607081-8f167d75-1899-44c6-9082-2189ba659415.png">
+
 点击`改`按钮，查看打印数据：
 
 ```js
@@ -389,7 +390,7 @@ FMDBDemo[95834:1335897] 插入数据成功
 ```
 查询年龄大于 **25** 的数据：
 
-![Pasted Graphic 8.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a503da9294194fb9abe95a152059832e~tplv-k3u1fbpfcp-watermark.image?)
+<img width="341" alt="Pasted Graphic 8" src="https://user-images.githubusercontent.com/126937296/228607122-f043a5fd-1736-4585-bbd8-4c79f2ba019d.png">
 
 点击`查`按钮，发现 **2** 条数据符合：
 
