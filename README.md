@@ -32,4 +32,4 @@
 - [SQLite](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20SQLite.md)
 
 # FMDB
-- [FMDB](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20SQLite.md)
+- [FMDB](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20FMDB.md)
