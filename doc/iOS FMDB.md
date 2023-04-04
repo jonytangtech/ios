@@ -1,4 +1,4 @@
-# FMDB
+# iOS应用数据持久化 FMDB
 `FMDB`是对`SQLite`的面向对象封装，主要包含 **3** 个类：
 
 1. `FMDatabase` 表示单个`SQLite`数据库，用于执行`SQL`语句；
