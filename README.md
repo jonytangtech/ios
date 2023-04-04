@@ -34,5 +34,5 @@
 # FMDB
 - [FMDB](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20FMDB.md)
 
-# WCDB
-- [WCDB](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20WCDB.md)
+# 微信移动端数据库组件 WCDB
+- [微信移动端数据库组件 WCDB](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20WCDB.md)
