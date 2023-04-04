@@ -4,7 +4,7 @@
 ## 前言：
 iOS 中常用的数据库有 `CoreData` 、 `SQLite` 和 `FMDB` 等等，其中 `CoreData` 和 Xcode 深度结合，易用度较差； `SQLite` 本身就是C语言，使用需要了解C语言接口； `FMDB` 是对 `SQLite` 的一层封装，很多胶水代码，仍然自己需要写 `SQL` 语句，而 `WCDB` 是微信团队开发的一个易用、高效、完整的移动数据库框架，它基于 `SQLite` 和 `SQLCipher` 开发，支持加密、损坏检测、数据备份、和数据修复，在微信中应用广泛，且支持在  `C++` 、 `Swift` 、 `Objc` 三种语言环境中使用。
 
-![CodeStructure.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2d997a347bac4bd1b88fdb5f16cf3b9c~tplv-k3u1fbpfcp-watermark.image?)
+![CodeStructure](https://user-images.githubusercontent.com/126937296/229737809-f4cd8aac-14e9-4403-9513-2292c88d8256.png)
 
 ## WCDB 的最基础的调用过程大致分为三个步骤：
 1. 模型绑定
@@ -33,7 +33,8 @@ curl https://raw.githubusercontent.com/Tencent/wcdb/master
 
 打开`cmd + n`拉到最下面：
 
-![Pasted Graphic.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/154a3a252c0e45e5b1029608467f3ecd~tplv-k3u1fbpfcp-watermark.image?)
+<img width="730" alt="Pasted Graphic" src="https://user-images.githubusercontent.com/126937296/229737926-005e948c-16c5-434a-8b51-72adf18b233e.png">
+
 >选swift创建，由于模板是旧代码，需要把`import WCDB`改成`import WCDBSwift`
 
 ### 2、WCDB Swift 的模型绑定分为五个部分：
@@ -73,7 +74,7 @@ ColumnConstraintBinding]? {
 #### 4）swift6 错误警告
 由于 `Github上WCDB` 的是 `swift4.0` 的代码，现在使用有些需要修改，会提示：
 
-![Pasted Graphic 1.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5c43a2014644f8888b9de1994ba3582~tplv-k3u1fbpfcp-watermark.image?)
+<img width="528" alt="Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/229738025-c862ed2e-0027-4e89-8df4-4768ce7c2b09.png">
 
 在 `class Person` 前面添加 `final` 消除警告
 
@@ -217,7 +218,7 @@ print("endTime ------------------" + endTime)
 ```
 数据库表中如下：
 
-![1__#$!@%!#__Pasted Graphic 1.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5480657f268c4227911230b0d92f883f~tplv-k3u1fbpfcp-watermark.image?)
+<img width="772" alt="1__#$!@%!#__Pasted Graphic 1" src="https://user-images.githubusercontent.com/126937296/229738154-a7a0f8f3-9b51-4135-b243-3f993c2fbf79.png">
 
 运行打印：
 ```js
