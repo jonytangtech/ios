@@ -1,4 +1,4 @@
-# WCDB
+# 微信移动端数据库组件 WCDB
 
 ## 前言：
 iOS 中常用的数据库有 `CoreData` 、 `SQLite` 和 `FMDB` 等等，其中 `CoreData` 和 Xcode 深度结合，易用度较差； `SQLite` 本身就是C语言，使用需要了解C语言接口； `FMDB` 是对 `SQLite` 的一层封装，很多胶水代码，仍然自己需要写 `SQL` 语句，而 `WCDB` 是微信团队开发的一个易用、高效、完整的移动数据库框架，它基于 `SQLite` 和 `SQLCipher` 开发，支持加密、损坏检测、数据备份、和数据修复，在微信中应用广泛，且支持在  `C++` 、 `Swift` 、 `Objc` 三种语言环境中使用。
