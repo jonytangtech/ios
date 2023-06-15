@@ -1,5 +1,5 @@
 # 组件化
-- [组件化] (https://github.com/jonytangtech/ios/blob/main/doc/iOS%20%E7%BB%84%E4%BB%B6%E5%8C%96.md)
+- [组件化](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20%E7%BB%84%E4%BB%B6%E5%8C%96.md)
 
 # 二进制重排
 - [二进制重排（一）](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%87%8D%E6%8E%92(%E4%B8%80).md)
