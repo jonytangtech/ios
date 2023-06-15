@@ -1,8 +1,3 @@
-KVO
-
----
-theme: github
----
 
 # KVO
 
