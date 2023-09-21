@@ -1,5 +1,5 @@
 # 类
-- [类]([https://github.com/jonytangtech/ios/blob/main/doc/iOS%20%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB%E5%92%8Cisa%E6%8C%87%E5%90%91.md])
+- [类](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB%E5%92%8Cisa%E6%8C%87%E5%90%91.md)
 # 组件化
 - [组件化](https://github.com/jonytangtech/ios/blob/main/doc/iOS%20%E7%BB%84%E4%BB%B6%E5%8C%96.md)
 
