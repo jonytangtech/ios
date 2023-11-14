@@ -216,19 +216,19 @@ XCTAssertEqualObjects(a1, a2, format...)
 
 <img width="289" alt="Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/225663471-5fc912eb-709e-4ff3-a429-6d07270e5c8a.png">
 ## 总结
-1、iOS单元测试有4个方法，setUp、tearDown、testExample、testPerformanceExample；
-2、初始化的值写在setUp里面，tearDown里面把值置空，testExample写测试例子，testPerformanceExample写测试性能的东西
-3、自己写的测试方法必须以test开头
-4、执行顺序是setUp、test开头的测试用例、tearDown，多个测试用例会重复执行这一顺序
-5、性能测试必须写在mesure里面，OC叫mesureBlock
-6、测试异步，需要用到期望，初始化一个期望值，然后异步执行完成，调用实现期望，最后调用等待期望和超时做比较。
-7、swift使用的时候，必须导入@testable import target名称
-8、每个单元测试都是独立的，可以独立运行
-9、单元测试设计不要太复杂，多个复杂的单元测试会耗费太多时间
-10、尽可能地覆盖边界条件，提升代码安全性
-11、定期维护，随着项目迭代，可能部分单元测试已经过时，不能再准确测试函数功能，需要及时维护单元测试，确保测试的有效性
-12、不是所有的代码都需要写单元测试，但是单元测试主要覆盖核心代码
-13、每次提交合并前，需要跑一次全量的单元测试
+1、iOS单元测试有4个方法，setUp、tearDown、testExample、testPerformanceExample；<br>
+2、初始化的值写在setUp里面，tearDown里面把值置空，testExample写测试例子，testPerformanceExample写测试性能的东西；<br>
+3、自己写的测试方法必须以test开头；<br>
+4、执行顺序是setUp、test开头的测试用例、tearDown，多个测试用例会重复执行这一顺序；<br>
+5、性能测试必须写在mesure里面，OC叫mesureBlock；<br>
+6、测试异步，需要用到期望，初始化一个期望值，然后异步执行完成，调用实现期望，最后调用等待期望和超时做比较；<br>
+7、swift使用的时候，必须导入@testable import target名称；<br>
+8、每个单元测试都是独立的，可以独立运行；<br>
+9、单元测试设计不要太复杂，多个复杂的单元测试会耗费太多时间；<br>
+10、尽可能地覆盖边界条件，提升代码安全性；<br>
+11、定期维护，随着项目迭代，可能部分单元测试已经过时，不能再准确测试函数功能，需要及时维护单元测试，确保测试的有效性；<br>
+12、不是所有的代码都需要写单元测试，但是单元测试主要覆盖核心代码；<br>
+13、每次提交合并前，需要跑一次全量的单元测试；<br>
 
 
 ## 参考：
