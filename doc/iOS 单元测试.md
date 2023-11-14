@@ -215,7 +215,8 @@ XCTAssertEqualObjects(a1, a2, format...)
 既可准备打包：
 
 <img width="289" alt="Pasted Graphic 7" src="https://user-images.githubusercontent.com/126937296/225663471-5fc912eb-709e-4ff3-a429-6d07270e5c8a.png">
-## 总结
+
+## 总结：
 1、iOS单元测试有4个方法，setUp、tearDown、testExample、testPerformanceExample；<br>
 2、初始化的值写在setUp里面，tearDown里面把值置空，testExample写测试例子，testPerformanceExample写测试性能的东西；<br>
 3、自己写的测试方法必须以test开头；<br>
